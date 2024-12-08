@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: black;
+    font-size: 18px;
+}
+
+#mainContainer {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/[freepicdownloader.com]-free-photo-ramadan-kareem-eid-mubarak-royal-elegant-lamp-with-mosque-holy-gate-with-fireworks-large\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(18, 18, 18, 0.8);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.7em;
+    color: white;
+}
+
+.form {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input {
+    width: 40%;
+    height: 4vh;
+    border-radius: 6px;
+    border: none;
+    padding-left: 7px;
+    font-size: 0.8em;
+}
+
+.btn {
+    width: 12%;
+    height: 4vh;
+    border-radius: 6px;
+    border: none;
+    font-size: 0.7em;
+    background-color: white;
+}
+
+ul {
+    width: 18%;
+    list-style-type: none;
+    display: flex;
+    font-size: 0.9em;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 10px 50px;
+}
+
+#currentTime {
+    width: 80%;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.currentTime {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.upcoming {
+    width: 100%;
+    font-size: 26px;
+    color: white;
+    text-align: center;
+}
+
+.comingtime {
+    width: 100%;
+    text-align: center;
+    font-size: 48px;
+    margin-top: 10px;
+    color: white
+}
+.comingtime1 {
+    width: 100%;
+    text-align: center;
+    font-size: 88px;
+    color: white
+}
+
+#timeZone{
+    width: 80%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.clock {
+    font-size: 2em;
+    color: white;
+}
+.timeZone {
+    font-size: 2em;
+    color: white;
+}
+#mainContainer2 {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(244, 244, 244);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: -2;
+}
+
+#container2 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/[freepicdownloader.com]-seamless-3d-ramadan-islamic-pattern-arabian-style-vector-illustration-large.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.05;
+    position: absolute;
+    z-index: -1;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.today {
+    width: 50%;
+    text-align: center;
+    font-size: 58px;
+    margin: 20px 0;
+}
+
+#prayertimes {
+    width: 80%;
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.prayer {
+    width: 60%;
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 100%;
+    height: 12vh;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.prayerName {
+    width: 45%;
+    font-size: 2em;
+    text-align: center;
+}
+
+.timesOfPrayer {
+    width: 45%;
+    text-align: center;
+    font-size: 2em;
+}
+
+.date {
+    width: 38%;
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.calander {
+    width: 100%;
+    height: 33vh;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.hijri {
+    width: 80%;
+    text-align: center;
+    font-size: 2em;
+}
+
+.datetime {
+    font-size: 2em;
+}
+
+
+@media only screen and (max-width: 576px){
+    body{
+        font-size: 8px;
+    }
+    header{
+        height: 6vh;
+    }
+    .form{
+        width: 50%;
+    }
+    input, .btn{
+        height: 2.3vh;
+        border-radius: 3px;
+    }
+    nav{
+        width: 95%;
+    }
+    ul{
+        width: 20%;
+    }
+    .today{
+        font-size: 30px;
+    }
+    #prayertimes{
+        width: 90%;
+        height: 75vh;
+    }
+    .prayer{
+        width: 100%;
+        height: 50vh;
+    }
+    .box{
+        height: 8vh;
+    }
+    .date{
+        width: 100%;
+        height: 25vh;
+    }
+    .calander{
+        width: 100%;
+        height: 10vh;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    body{
+        font-size: 10px;
+    }
+    header{
+        height: 7vh;
+    }
+    .form{
+        width: 55%;
+    }
+    input, .btn{
+        height: 2.5vh;
+        border-radius: 4px;
+    }
+    nav{
+        width: 90%;
+    }
+    ul{
+        width: 18%;
+    }
+    .today{
+        font-size: 45px;
+    }
+    #prayertimes{
+        height: 65vh;
+    }
+    .prayer{
+        width: 100%;
+        height: 40vh;
+    }
+    .box{
+        height: 7vh;
+    }
+    .date{
+        width: 100%;
+        height: 25vh;
+    }
+    .calander{
+        width: 100%;
+        height: 9vh;
+    }
+}
+@media only screen and (min-width: 767px) and (max-width: 991px){
+    body{
+        font-size: 12px;
+    }
+    header{
+        height: 7vh;
+    }
+    .form{
+        width: 55%;
+    }
+    input, .btn{
+        height: 2.5vh;
+        border-radius: 4px;
+    }
+    nav{
+        width: 90%;
+    }
+    ul{
+        width: 18%;
+    }
+    .today{
+        font-size: 50px;
+    }
+    #prayertimes{
+        height: 65vh;
+    }
+    .prayer{
+        width: 100%;
+        height: 40vh;
+    }
+    .box{
+        height: 7vh;
+    }
+    .date{
+        width: 100%;
+        height: 25vh;
+    }
+    .calander{
+        width: 100%;
+        height: 9vh;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    body{
+        font-size: 12px;
+    }
+    header{
+        height: 7vh;
+    }
+    .form{
+        width: 60%;
+    }
+    input, .btn{
+        height: 2.5vh;
+        border-radius: 4px;
+    }
+    nav{
+        width: 85%;
+    }
+    ul{
+        width: 15%;
+    }
+    .today{
+        font-size: 55px;
+    }
+    #prayertimes{
+        width: 90%;
+        height: 70vh;
+    }
+    .prayer{
+        width: 100%;
+        height: 45vh;
+    }
+    .box{
+        height: 7vh;
+    }
+    .date{
+        width: 100%;
+        height: 20vh;
+    }
+    .calander{
+        width: 100%;
+        height: 9vh;
+    }
+}

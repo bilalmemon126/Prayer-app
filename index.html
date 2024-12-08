@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayer Times</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="mainContainer"></div>
+    <header>
+        <nav>
+            <h3 class="logo">Prayer Times</h3>
+            <div class="form">
+                <input type="text" class="city" id="city" placeholder="City Name">
+                <input type="text" class="country" id="country" placeholder="Country Name">
+                <button class="btn" onclick="getPrayerTime()">Search</button>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#mainContainer2">Prayer Times</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="container">
+        <div id="currentTime">
+            <div class="currentTime">
+                <p class="upcoming">UPCOMING PRAYER</p>
+                <p class="comingtime"></p>
+                <p class="comingtime1">---</p>
+            </div>
+        </div>
+        <div id="timeZone">
+            <p class="clock">---</p>
+            <p class="timeZone">asia/karachi</p>
+        </div>
+    </div>
+    <div id="mainContainer2">
+        <div id="container2"></div>
+        <div id="main">
+            <h3 class="today">Today's Prayer Times</h3>
+            <div id="prayertimes">
+                <div class="prayer">
+                    <div class="box">
+                        <h3 class="prayerName">Fajr</h3>
+                        <p class="fajrtime timesOfPrayer">---</p>
+                    </div>
+                    <div class="box">
+                        <h3 class="prayerName">Dhuhr</h3>
+                        <p class="dhuhrtime timesOfPrayer">---</p>
+                    </div>
+                    <div class="box">
+                        <h3 class="prayerName">Asr</h3>
+                        <p class="asrtime timesOfPrayer">---</p>
+                    </div>
+                    <div class="box">
+                        <h3 class="prayerName">Maghrib</h3>
+                        <p class="maghribtime timesOfPrayer">---</p>
+                    </div>
+                    <div class="box">
+                        <h3 class="prayerName">Isha</h3>
+                        <p class="ishatime timesOfPrayer">---</p>
+                    </div>
+                </div>
+                <div class="date">
+                    <div id="hijri" class="calander">
+                        <p class="hijriMonth hijri">---</p>
+                        <p class="hijriYear hijri">---</p>
+                    </div>
+                    <div id="datetime" class="calander">
+                        <p class="datetime">---</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
